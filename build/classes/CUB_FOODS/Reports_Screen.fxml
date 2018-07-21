@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXListCell?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CUB_FOODS.Reports_ScreenController">
+   <children>
+      <ImageView fitHeight="49.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/shop_logo.png" />
+         </image>
+      </ImageView>
+      <JFXListView layoutX="14.0" layoutY="71.0" prefHeight="462.0" prefWidth="248.0">
+         <tooltip>
+            <Tooltip text="Select a Report to View" />
+         </tooltip>
+      </JFXListView>
+      <JFXListCell layoutX="14.0" layoutY="71.0" prefHeight="58.0" prefWidth="248.0" text="Work Period Report">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXListCell>
+      <JFXListCell layoutX="14.0" layoutY="129.0" prefHeight="58.0" prefWidth="248.0" text="Item Sales Report">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXListCell>
+      <JFXListCell layoutX="14.0" layoutY="187.0" prefHeight="58.0" prefWidth="248.0" text="Cash Transaction Report">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXListCell>
+      <JFXListCell layoutX="14.0" layoutY="245.0" prefHeight="58.0" prefWidth="248.0" text="Inventory Transaction Report">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXListCell>
+      <JFXListCell layoutX="14.0" layoutY="302.0" prefHeight="58.0" prefWidth="248.0" text="Inventory Report">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXListCell>
+      <JFXListCell layoutX="14.0" layoutY="360.0" prefHeight="58.0" prefWidth="248.0" text="Cost Report">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXListCell>
+      <JFXDatePicker disable="true" layoutX="480.0" layoutY="71.0" prefHeight="28.0" prefWidth="104.0" promptText="From" />
+      <JFXDatePicker disable="true" layoutX="584.0" layoutY="71.0" prefHeight="28.0" prefWidth="104.0" promptText="To" />
+      <JFXButton buttonType="RAISED" disable="true" layoutX="698.0" layoutY="72.0" style="-fx-background-color: #ecf0f1;" text="Refresh" />
+      <JFXButton buttonType="RAISED" disable="true" layoutX="766.0" layoutY="73.0" prefHeight="26.0" prefWidth="56.0" style="-fx-background-color: #ecf0f1;" text="Print" />
+      <JFXButton buttonType="RAISED" disable="true" layoutX="830.0" layoutY="73.0" prefHeight="26.0" prefWidth="56.0" style="-fx-background-color: #ecf0f1;" text="Save" />
+      <Label layoutX="533.0" layoutY="15.0" prefHeight="18.0" prefWidth="309.0" text="Monday , December 25 , 2017 12.00 AM">
+         <font>
+            <Font name="Courier New" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="858.0" layoutY="5.0" style="-fx-background-color: #bdc3c7;" text="◀">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Go back to main menu" />
+         </tooltip>
+      </JFXButton>
+   </children>
+</AnchorPane>

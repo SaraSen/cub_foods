@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXListCell?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CUB_FOODS.Workperiod_Report_ScreenController">
+   <children>
+      <ImageView fitHeight="49.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/shop_logo.png" />
+         </image>
+      </ImageView>
+      <JFXListView layoutX="14.0" layoutY="71.0" prefHeight="462.0" prefWidth="248.0">
+         <tooltip>
+            <Tooltip text="Select a Report to View" />
+         </tooltip>
+      </JFXListView>
+      <JFXListCell layoutX="14.0" layoutY="71.0" prefHeight="58.0" prefWidth="248.0" text="Work Period Report">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXListCell>
+      <JFXListCell layoutX="14.0" layoutY="129.0" prefHeight="58.0" prefWidth="248.0" text="Item Sales Report">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXListCell>
+      <JFXListCell layoutX="14.0" layoutY="187.0" prefHeight="58.0" prefWidth="248.0" text="Cash Transaction Report">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXListCell>
+      <JFXListCell layoutX="14.0" layoutY="245.0" prefHeight="58.0" prefWidth="248.0" text="Inventory Transaction Report">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXListCell>
+      <JFXListCell layoutX="14.0" layoutY="302.0" prefHeight="58.0" prefWidth="248.0" text="Inventory Report">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXListCell>
+      <JFXListCell layoutX="14.0" layoutY="360.0" prefHeight="58.0" prefWidth="248.0" text="Cost Report">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXListCell>
+      <JFXDatePicker layoutX="480.0" layoutY="71.0" prefHeight="28.0" prefWidth="104.0" promptText="From" />
+      <JFXDatePicker layoutX="584.0" layoutY="71.0" prefHeight="28.0" prefWidth="104.0" promptText="To" />
+      <JFXButton buttonType="RAISED" layoutX="698.0" layoutY="72.0" style="-fx-background-color: #ecf0f1;" text="Refresh" />
+      <JFXButton buttonType="RAISED" layoutX="766.0" layoutY="73.0" prefHeight="26.0" prefWidth="56.0" style="-fx-background-color: #ecf0f1;" text="Print" />
+      <JFXButton buttonType="RAISED" layoutX="830.0" layoutY="73.0" prefHeight="26.0" prefWidth="56.0" style="-fx-background-color: #ecf0f1;" text="Save" />
+      <JFXComboBox fx:id="dura" layoutX="282.0" layoutY="73.0" prefHeight="26.0" prefWidth="182.0" promptText="select a time period" />
+      <Label layoutX="362.0" layoutY="119.0" text="CUB Foods POS&#10;Work Period Report&#10;Sunday , December 24 , 2017 12.00 AM - Monday , December 25 , 2017 12.00 AM&#10;&#10;" textAlignment="CENTER" />
+      <TableView fx:id="table" layoutX="364.0" layoutY="187.0" prefHeight="86.0" prefWidth="431.0">
+        <columns>
+            <TableColumn prefWidth="75.0" text="Sales">
+               <columns>
+                <TableColumn fx:id="saledatacol1" prefWidth="75.0" text="Type" />
+                <TableColumn fx:id="saledatacol2" prefWidth="75.0" text="Value" />
+               </columns>
+            </TableColumn>
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TableView fx:id="table2" layoutX="364.0" layoutY="289.0" prefHeight="137.0" prefWidth="431.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Payments">
+               <columns>
+                  <TableColumn fx:id="paymentdatacol1" prefWidth="75.0" text="Type" />
+                  <TableColumn fx:id="paymentdatacol2" prefWidth="75.0" text="Value" />
+               </columns>
+            </TableColumn>
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TableView fx:id="table3" layoutX="362.0" layoutY="446.0" prefHeight="86.0" prefWidth="431.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Order Count">
+               <columns>
+                  <TableColumn fx:id="countdatacol1" prefWidth="75.0" text="Type" />
+                  <TableColumn fx:id="countdatacol2" prefWidth="75.0" text="Value" />
+               </columns>
+            </TableColumn>
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="533.0" layoutY="15.0" prefHeight="18.0" prefWidth="309.0" text="Monday , December 25 , 2017 12.00 AM">
+         <font>
+            <Font name="Courier New" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="852.0" layoutY="5.0" style="-fx-background-color: #bdc3c7;" text="◀">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Go back to main menu" />
+         </tooltip>
+      </JFXButton>
+   </children>
+</AnchorPane>

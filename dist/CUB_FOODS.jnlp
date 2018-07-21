@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="CUB_FOODS.jnlp">
+    <information>
+        <title>CUB_FOODS</title>
+        <vendor>Saroj</vendor>
+        <description>null</description>
+        <offline-allowed/>
+    </information>
+    <update check="always"/>
+    <resources>
+        <j2se version="9.0.1+" java-vm-args="-Dcom.sun.javafx.isEmbedded=true -Dcom.sun.javafx.touch=true -Dcom.sun.javafx.virtualKeyboard=javafx " href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="CUB_FOODS.jar" size="3738119" download="eager"/>
+        <jar href="lib\jfoenix-9.0.0.jar" size="2139336" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="800" height="600" main-class="CUB_FOODS.cub_foods" name="cub_foods"/>
+</jnlp>
+

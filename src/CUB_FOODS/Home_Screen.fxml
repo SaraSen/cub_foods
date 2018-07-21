@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CUB_FOODS.Home_ScreenController">
+   <children>
+      <ImageView fitHeight="49.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/shop_logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="579.0" layoutY="5.0" prefHeight="18.0" prefWidth="312.0" text="Monday , December 25 , 2017 12.00 AM">
+         <font>
+            <Font name="Courier New" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="57.0" layoutY="65.0" prefHeight="234.0" prefWidth="249.0" ripplerFill="BLACK" style="-fx-background-color: #2ecc71;" text="Work Periods" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <ImageView disable="true" fitHeight="60.0" fitWidth="60.0" layoutX="152.0" layoutY="81.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/workperiod.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="57.0" layoutY="317.0" prefHeight="234.0" prefWidth="249.0" ripplerFill="BLACK" style="-fx-background-color: #2ecc71;" text="Reports" textAlignment="JUSTIFY">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="325.0" layoutY="65.0" prefHeight="234.0" prefWidth="249.0" ripplerFill="BLACK" style="-fx-background-color: #2ecc71;" text="Point of Sale" textAlignment="JUSTIFY">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="325.0" layoutY="317.0" prefHeight="234.0" prefWidth="249.0" ripplerFill="BLACK" style="-fx-background-color: #2ecc71;" text="Settings" textAlignment="JUSTIFY">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="589.0" layoutY="65.0" prefHeight="234.0" prefWidth="249.0" ripplerFill="BLACK" style="-fx-background-color: #2ecc71;" text="Accounts" textAlignment="JUSTIFY">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="589.0" layoutY="317.0" prefHeight="234.0" prefWidth="249.0" ripplerFill="BLACK" style="-fx-background-color: #2ecc71;" text="Logout" textAlignment="JUSTIFY">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <ImageView disable="true" fitHeight="60.0" fitWidth="60.0" layoutX="424.0" layoutY="81.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/invoice.png" />
+         </image>
+      </ImageView>
+      <ImageView disable="true" fitHeight="60.0" fitWidth="60.0" layoutX="693.0" layoutY="81.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/accounts.png" />
+         </image>
+      </ImageView>
+      <ImageView disable="true" fitHeight="60.0" fitWidth="60.0" layoutX="152.0" layoutY="331.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/reports.png" />
+         </image>
+      </ImageView>
+      <ImageView disable="true" fitHeight="60.0" fitWidth="60.0" layoutX="420.0" layoutY="331.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/settings.png" />
+         </image>
+      </ImageView>
+      <ImageView disable="true" fitHeight="60.0" fitWidth="60.0" layoutX="684.0" layoutY="331.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/logout.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
